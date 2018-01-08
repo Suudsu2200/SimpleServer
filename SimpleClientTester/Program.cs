@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using SimpleServerUtil;
+using Fiction.Contracts;
 
 namespace SimpleClientTester
 {
@@ -12,11 +12,16 @@ namespace SimpleClientTester
     {
         static void Main(string[] args)
         {
-            BaseClient client = new BaseClient(5);
+            //BaseClient client = new BaseClient(5);
+            //while (true)
+            //{ 
+            // Console.WriteLine("Request: " + client.Request<int?>( new CreateUserCommand { Username = "Derpo", Password = "DerpoPass"}));
+            //Thread.Sleep(10000);
+            //
+            //Console.WriteLine("Request: " + client.Request<int?>(new LogInCommand { Username = "Derpo", Password = "DerpoPass" }));
+            //client.Request<int?>(new LogInCommand {Username = "Derpo", Password = "DerpoPass"});
             while (true)
-            { 
-                Console.WriteLine("Request: " + client.Request<int>(75));
-                Thread.Sleep(1000);
+            {
             }
         }
     }

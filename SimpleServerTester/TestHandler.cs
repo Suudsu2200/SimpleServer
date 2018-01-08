@@ -1,12 +1,13 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
+using SimpleServerLib;
 using SimpleServerTester;
 
 namespace SimpleServerUtil.TestHandlers
 {
-    public class TestHandler : IRequestHandler
+    public class TestHandler : IRequestHandler2
     {
-        private BaseDataStore _dataStore;
+        /*private BaseDataStore _dataStore;
         private int count;
 
         public TestHandler()
@@ -26,7 +27,7 @@ namespace SimpleServerUtil.TestHandlers
                 command.CommandText = $"INSERT INTO game.game (CardId) VALUES ({hello});";
                 command.ExecuteNonQuery();
             }
-            return hello;*/
-        }
+            return hello;
+        }*/
     }
 }

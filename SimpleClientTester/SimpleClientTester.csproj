@@ -50,6 +50,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fiction.Contracts\Fiction.Contracts.csproj">
+      <Project>{eb61b193-60e6-4ebc-8204-01fb68f99ed0}</Project>
+      <Name>Fiction.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleServerLib\SimpleServerLib.csproj">
+      <Project>{f07d29c4-acf7-449d-a78c-e98fac1a6220}</Project>
+      <Name>SimpleServerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

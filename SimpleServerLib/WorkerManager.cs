@@ -1,18 +1,18 @@
 ﻿using System.Collections.Generic;
-using System.Net.Sockets;
+using System.Net.Security;
 using System.Threading;
 
-namespace SimpleServerUtil
+namespace SimpleServerLib
 {
     public class WorkerManager
     {
-        public List<NetworkStream> Connections { get; set; }
+        public List<SslStream> Connections { get; set; }
         private readonly Thread _thread;
 
         public WorkerManager(ParameterizedThreadStart threadStart)
         {
             _thread = new Thread(threadStart);
-            Connections = new List<NetworkStream>();
+            Connections = new List<SslStream>();
         }
 
         public void Start()

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
+using System.Net.Security;
 using System.Threading;
 
-namespace SimpleServerUtil
+namespace SimpleServerLib
 {
     public class LoadBalancer
     {
@@ -17,7 +17,7 @@ namespace SimpleServerUtil
             _threadStart = threadStart;
         }
 
-        public void DelegateNewConnection(NetworkStream connection)
+        public void DelegateNewConnection(SslStream connection)
         {
             if (_activeThreads.Count < ThreadMax)
             {

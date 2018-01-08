@@ -10,7 +10,7 @@ namespace SimpleServerTester
 {
     public class GameServer
     {
-        public static void GameServerMain(object workerConnectionManager)
+       /* public static void GameServerMain(object workerConnectionManager)
         {
             WorkerManager connectionManager =
                 (WorkerManager) workerConnectionManager;
@@ -59,6 +59,6 @@ namespace SimpleServerTester
                 }
             }
             return handlerRegistry;
-        }
+        }*/
     }
 }
